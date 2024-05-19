@@ -9,5 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface InventoryRepository extends MongoRepository<Inventory, ObjectId> {
-    List<Inventory> findBySkuCodeIn(List<String> skuCode);
+    List<Inventory> findByNameIn(List<String> name);
+    
+    boolean existsByName(String name);
 }

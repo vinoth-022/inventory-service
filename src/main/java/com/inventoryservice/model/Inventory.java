@@ -18,7 +18,10 @@ import org.bson.types.ObjectId;
 public class Inventory {
 
   
-    private ObjectId id ;
-    private String skuCode ;
-    private Integer quantity ;
+    private ObjectId id ; // abc - iPhone14 
+    private String name ; // def
+    private String description;
+    private Integer quantity ; // 10 
+    private Integer price;
+    // productId == Product id 
 }
